@@ -4,18 +4,20 @@
 #include <iostream>
 using namespace std;
 
-class Account 
+class Account
 {
-    private:
-    int balance; //this is called instance member variable
+private:
+    int balance;       //this is called instance member variable
     static float rate; //static member variable or class variable
-    public:
+public:
     void setBalance(int b)
     {
         balance = b;
     }
     void showBalance()
-    {cout<<"balance is "<<balance<<endl;}
+    {
+        cout << "balance is " << balance << endl;
+    }
     static void setRate(float r) //non instance member function
     {
         rate = r;
